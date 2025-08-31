@@ -1,9 +1,5 @@
 import bannerFactory from "./components/banner";
-bannerFactory();
+import swiperVariants from "./common/swiper";
 
-var swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+bannerFactory();
+swiperVariants("mySwiper", 1, 0, 3000);
