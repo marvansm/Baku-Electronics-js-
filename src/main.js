@@ -1,7 +1,11 @@
 import bannerFactory from "./components/banner";
 import swiperVariants from "./common/swiper";
-import Header from "./layout/header";
+import NavbarData from "./layout/header";
+import postUserData from "./Auth/login";
 
-bannerFactory();
-Header();
-swiperVariants("mySwiper", 1, 0, 3000);
+document.addEventListener("DOMContentLoaded", () => {
+  postUserData();
+  bannerFactory();
+  NavbarData();
+  swiperVariants("mySwiper", 1, 0, 3000);
+});

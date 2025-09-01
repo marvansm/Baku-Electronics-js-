@@ -1,4 +1,4 @@
-const Header = () => {
+const NavbarData = () => {
   const navbar = [
     "Kampaniyalar",
     "Korporativ satışlar",
@@ -10,17 +10,20 @@ const Header = () => {
 
   const Header = document.querySelector("#Nav_bar");
 
-  const navItems = navbar
-    .map((item) => {
-      return `<li class="font-bold opacity-[.5] hover:opacity-100 duration-300 cursor-pointer">
+  const navItems =
+    navbar &&
+    navbar
+      .map((item) => {
+        return `<li class="font-bold opacity-[.5] hover:opacity-100 duration-300 cursor-pointer">
         ${item}${
-        item === "Digər" ? ' <i class="ri-arrow-down-s-line"></i>' : ""
-      }
+          item === "Digər" ? ' <i class="ri-arrow-down-s-line"></i>' : ""
+        }
       </li>`;
-    })
-    .join("");
+      })
+      .join("");
 
-  Header.innerHTML = `
+  Header &&
+    (Header.innerHTML = `
       <div class="flex flex-col gap-[20px] w-full h-full ">
         <div class="more flex items-center justify-between gap-[20px] bg-[#f5f5f5] rounded-[25px] py-2.5 px-6 w-full">
           <ul class="flex items-center gap-[35px] text-[#333] text-[14px] leading-[19px]">
@@ -222,7 +225,9 @@ const Header = () => {
                   ></path>
                 </svg>
               </li>
-              <li
+       
+    <a href="./login.html">
+           <li
                 class="w-[50px] h-[50px] bg-[#f5f5f5] text-[#333] leading-[50px] rounded-[12px] duration-200 cursor-pointer hover:bg-[#dadada] flex items-center justify-center"
               >
                 <svg
@@ -247,20 +252,25 @@ const Header = () => {
                     stroke-width="2"
                   ></rect>
                 </svg>
+
               </li>
+    
+    </a>
+
             </ul>
           </div>
         </nav>
       </div>
-    `;
+    `);
 
   const DARK_MODE_BTN = document.querySelector("#themeBtn");
-  const circle = DARK_MODE_BTN.querySelector(".circle");
+  const circle = DARK_MODE_BTN && DARK_MODE_BTN.querySelector(".circle");
 
-  DARK_MODE_BTN.addEventListener("click", () => {
-    document.body.classList.toggle("darkMode");
-    circle.classList.toggle("translate-x-[24px]");
-  });
+  DARK_MODE_BTN &&
+    DARK_MODE_BTN.addEventListener("click", () => {
+      document.body.classList.toggle("darkMode");
+      circle.classList.toggle("translate-x-[24px]");
+    });
 };
 
-export default Header;
+export default NavbarData;

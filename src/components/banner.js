@@ -53,7 +53,7 @@ const bannerFactory = () => {
             </div>`
     )
     .join();
-  SWIPER_WRAPPER.innerHTML = renderBanner;
+  SWIPER_WRAPPER && (SWIPER_WRAPPER.innerHTML = renderBanner);
 };
 
 export default bannerFactory;
