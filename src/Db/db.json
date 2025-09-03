@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": "122b5071-e42e-4d3e-9278-4e337a042ccf",
+      "name": "Smartfon HONOR X9C 12GB/256GB JADE CYAN",
+      "price": "899.99",
+      "discountPrice": "799.99",
+      "category": "elektronika",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2FinventImages%2FHONOR_X9C_JADE_CYAN_1.webp&w=3840&q=75"
+    },
+    {
+      "id": "cc427c09-26aa-46f4-8f6d-7e3708187753",
+      "name": "Smartfon Apple iPhone 16 128GB BLACK",
+      "price": "2249.99",
+      "discountPrice": "2039.99",
+      "category": "elektronika",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fapple-iphone-16-128gb-black-4.jpg&w=3840&q=75"
+    },
+    {
+      "id": "23d9415d-7587-441f-831a-3f157ff0f61a",
+      "name": "Tava NMP GU1626 26 sm",
+      "price": "59.99",
+      "discountPrice": "22.99",
+      "category": "ev əşyaları",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Ftava-nmp-gu1626-26-sm_1.webp&w=3840&q=75"
+    },
+    {
+      "id": "c9e00fea-9127-4807-86d0-964d741fdba1",
+      "name": "Kondisioner YOSHIRO YAC-S09OT0W-KIT W/O/INS ,9000 BTU, 20-30 m2 (Quraşdırılmasız)",
+      "price": "599.99",
+      "discountPrice": "399.99",
+      "category": "Ev əşyaları",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2FKondisioner_YOSHIRO_YAC-S09OT0W-KIT_WOINS_9000_BTU_20-30_m2___1.webp&w=3840&q=75"
+    },
+    {
+      "id": "1406a786-552a-4488-9502-71b47fc8563c",
+      "name": "Velosiped VISTA 29-ZF660-40",
+      "price": "419.99",
+      "discountPrice": "369.99",
+      "category": "idman",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fproducts%2F95324%2Fcn29-zf660-40.jpg&w=3840&q=75"
+    },
+    {
+      "id": "906607c2-4f42-48ff-a316-a8d2d8d649e4",
+      "name": "Televizor YOSHIRO YTV-43FAG770B",
+      "price": "579.99",
+      "discountPrice": "439.99",
+      "category": "Ev əşyaları",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2FTelevizor_YOSHIRO_YTV-43FAG770B.jpg&w=3840&q=75"
+    },
+    {
+      "id": "3358dc37-96e0-4b25-bd0a-958ae0692bdf",
+      "name": "Simsiz qulaqlıq Apple AirPods 4 White (MXP63ZE/A)",
+      "price": "399.99",
+      "discountPrice": "349.99",
+      "category": "elektronika",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fsimsiz-qulaqliq-apple-airpods-4-white-mxp63zea-1.jpg&w=3840&q=75"
+    },
+    {
+      "id": "af2a98b1-f4f2-4abe-9105-ec096e725723",
+      "name": "Smartfon Samsung Galaxy A25 8GB/256GB DARK BLUE (A256)",
+      "price": "699.99",
+      "discountPrice": "629.99",
+      "category": "elektronika",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fsmartfon-samsung-galaxy-a25-8gb256gb-dark-blue-a256_1.webp&w=3840&q=75"
+    },
+    {
+      "id": "f553cd0c-ca62-4daf-893d-6697e6acc8c6",
+      "name": "Konteynerli tozsoran SAMSUNG SC45 VCC4520S36/XEV",
+      "price": "179.99",
+      "discountPrice": "209.99",
+      "category": "elektronika",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fproducts%2F22029%2F10.jpg&w=3840&q=75"
+    },
+    {
+      "id": "8e49cdc4-cdf1-4070-8fcc-93a9d05d07aa",
+      "name": "Smartfon Samsung Galaxy A55 8GB/128GB LIGHT VIOLET (A556)",
+      "price": "649.99",
+      "discountPrice": "769.99",
+      "category": "elektronika",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fsmartfon-samsung-galaxy-a55-8gb128gb-light-violet-a556_1.webp&w=3840&q=75"
+    }
+  ]
+}

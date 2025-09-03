@@ -1,9 +1,9 @@
-const loader = () => {
+const loading = () => {
   const LOADER = document.querySelector("#Loading");
   setTimeout(() => {
-    LOADER.classList.add("hidden");
-    LOADER.classList.remove("flex");
+    LOADER && LOADER.classList.add("hidden");
+    LOADER && LOADER.classList.remove("flex");
   }, 2000);
 };
 
-export default loader;
+export default loading;
