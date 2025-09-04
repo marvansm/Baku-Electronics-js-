@@ -155,7 +155,7 @@ const productCards = () => {
             <div class="flex items-center gap-3">
               <button
          onclick='addToCart(${JSON.stringify(item)})'
-                class="add-to-cart flex-1 h-[48px] rounded-[14px] bg-[#E1E1E1] dark:bg-[#3F3F3F] dark:text-white hover:bg-[#ea2427] hover:text-white transition grid place-items-center text-[15px] font-semibold text-[#111827]"
+                class="add-to-cart flex-1 h-[48px] rounded-[14px] bg-[#E1E1E1] dark:bg-[#3F3F3F] dark:text-white hover:bg-[#ea2427] duration-300 cursor-pointer hover:text-white transition grid place-items-center text-[15px] font-semibold text-[#111827]"
               >
                 <span class="inline-flex items-center gap-2 text-[14px]">
                   <svg
@@ -221,6 +221,42 @@ const productCards = () => {
 
     PRODUCT_CARDS_WRAPPER && (PRODUCT_CARDS_WRAPPER.innerHTML = renderProducts);
     BASKET_COUNTER && updateBasketCounter();
+    document.querySelectorAll(".add-to-cart").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.style.backgroundColor = "#EA2427";
+        btn.style.color = "#fff";
+        btn.innerHTML = ` <a href="./basket.html">
+  <span class="flex items-center  gap-3 text-[14px]">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="1em"
+      height="1em"
+      fill="none"
+      viewBox="0 0 18 20"
+    >
+      <path
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="m1.292 3.708 1.733.3.803 9.56a1.5 1.5 0 0 0 1.5 1.378h9.09a1.5 1.5 0 0 0 1.488-1.288l.79-5.465a1.118 1.118 0 0 0-.945-1.266c-.053-.007-12.448-.011-12.448-.011M9.46 4.333V1M8.166 3.033l1.294 1.3 1.294-1.3"
+      ></path>
+      <path
+        fill="currentColor"
+        fill-rule="evenodd"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.5"
+        d="M4.962 17.835a.453.453 0 1 1 0 .906.453.453 0 0 1 0-.906ZM14.362 17.835a.454.454 0 1 1 0 .908.454.454 0 0 1 0-.908Z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+    Səbətə keç
+  </span>
+</a> `;
+      });
+    });
   });
 };
 

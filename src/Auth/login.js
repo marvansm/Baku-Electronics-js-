@@ -17,13 +17,13 @@ const postUserData = () => {
         console.log(data);
         if (data) {
           Swal.fire({
-            title: "Uğurla daxil oldunuz!",
+            title: "Done!",
             icon: "success",
             draggable: true,
           });
         } else {
           Swal.fire({
-            title: "Yenidən yoxlayın!",
+            title: "Ooops!",
             icon: "error",
             draggable: true,
           });
