@@ -77,16 +77,16 @@ const NavbarData = () => {
 
   if (savedTheme === "dark") {
     document.documentElement.classList.add("dark");
-    circle.classList.add("translate-x-[24px]");
+    circle && circle.classList.add("translate-x-[24px]");
   } else {
     document.documentElement.classList.remove("dark");
-    circle.classList.remove("translate-x-[24px]");
+    circle && circle.classList.remove("translate-x-[24px]");
   }
 
   DARK_MODE_BTN &&
     DARK_MODE_BTN.addEventListener("click", () => {
       document.documentElement.classList.toggle("dark");
-      circle.classList.toggle("translate-x-[24px]");
+      circle && circle.classList.toggle("translate-x-[24px]");
 
       if (document.documentElement.classList.contains("dark")) {
         localStorage.setItem("theme", "dark");

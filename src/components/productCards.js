@@ -187,7 +187,7 @@ const productCards = () => {
                 </span>
               </button>
               <button
-                class="w-[48px] h-[48px] rounded-[14px] bg-[#E1E1E1] dark:bg-[#3F3F3F] dark:text-white hover:bg-[#ea2427] hover:text-white grid place-items-center"
+                class="wishList cursor-pointer w-[48px] h-[48px] rounded-[14px] bg-[#E1E1E1] dark:bg-[#3F3F3F] dark:text-white hover:bg-[#ea2427] hover:text-white grid place-items-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -255,6 +255,12 @@ const productCards = () => {
     Səbətə keç
   </span>
 </a> `;
+      });
+    });
+    document.querySelectorAll(".wishList").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.style.backgroundColor = "#EA2427";
+        btn.style.color = "#fff";
       });
     });
   });
