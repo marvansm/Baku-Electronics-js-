@@ -30,9 +30,11 @@ const adminProductsPage = () => {
       window.location.reload();
     });
   api.GetApiData("products").then((data) => {
-    let renderAdminList = data
-      .map(
-        (item) => `<tr class="fade-in hover:bg-gray-50">
+    let renderAdminList =
+      data &&
+      data
+        .map(
+          (item) => `<tr class="fade-in hover:bg-gray-50">
                     <td class="px-4 py-3 text-sm text-gray-900 font-medium">${item?.name}</td>
                     <td class="px-4 py-3 text-sm text-gray-900">${item?.price} ₼</td>
                     <td class="px-4 py-3 text-sm text-gray-900">${item?.discountPrice} ₼</td>
@@ -57,8 +59,8 @@ const adminProductsPage = () => {
                         </button>
                     </td>
                 </tr>`
-      )
-      .join("");
+        )
+        .join("");
     PRODUCT_LIST_BODY && (PRODUCT_LIST_BODY.innerHTML = renderAdminList);
   });
 };

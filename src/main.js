@@ -5,6 +5,9 @@ import postUserData from "./Auth/login";
 import loading from "./Common/loader";
 import adminProductsPage from "./Admin/createProduct";
 import productCards from "./Components/productCards";
+import scrollToTop from "./Common/toTOP";
+import basketList from "./Components/basketList";
+import totalSummary from "./Components/totalSummary";
 
 document.addEventListener("DOMContentLoaded", () => {
   postUserData();
@@ -13,6 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
   loading();
   adminProductsPage();
   productCards();
-
+  scrollToTop();
+  basketList();
+  totalSummary();
   swiperVariants("mySwiper", 1.2, 30, 3000);
 });

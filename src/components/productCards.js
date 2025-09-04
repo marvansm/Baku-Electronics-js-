@@ -1,7 +1,18 @@
 import HttpService from "../Api/api";
+import { addToCart } from "../Provider/CartProvider";
+import { updateBasketCounter } from "../utils/updateBasketCounter";
 
 const PRODUCT_CARDS_WRAPPER = document.querySelector("#productCards");
+
+const BASKET_COUNTER = document.querySelector("#basketCounter");
+
 const api = new HttpService("http://localhost:3000/");
+
+window.addToCart = (product) => {
+  addToCart(product);
+  updateBasketCounter();
+};
+
 const productCards = () => {
   api.GetApiData("products").then((data) => {
     let renderProducts = data
@@ -143,7 +154,8 @@ const productCards = () => {
 
             <div class="flex items-center gap-3">
               <button
-                class="flex-1 h-[48px] rounded-[14px] bg-[#E1E1E1] dark:bg-[#3F3F3F] dark:text-white hover:bg-[#ea2427] hover:text-white transition grid place-items-center text-[15px] font-semibold text-[#111827]"
+         onclick='addToCart(${JSON.stringify(item)})'
+                class="add-to-cart flex-1 h-[48px] rounded-[14px] bg-[#E1E1E1] dark:bg-[#3F3F3F] dark:text-white hover:bg-[#ea2427] hover:text-white transition grid place-items-center text-[15px] font-semibold text-[#111827]"
               >
                 <span class="inline-flex items-center gap-2 text-[14px]">
                   <svg
@@ -206,7 +218,9 @@ const productCards = () => {
           </div>`
       )
       .join("");
+
     PRODUCT_CARDS_WRAPPER && (PRODUCT_CARDS_WRAPPER.innerHTML = renderProducts);
+    BASKET_COUNTER && updateBasketCounter();
   });
 };
 
