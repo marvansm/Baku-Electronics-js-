@@ -3,6 +3,7 @@ import { addToCart } from "../Provider/CartProvider";
 import { updateBasketCounter } from "../utils/updateBasketCounter";
 
 const PRODUCT_CARDS_WRAPPER = document.querySelector("#productCards");
+const TREND_PRODUCTS_WRAPPER = document.querySelector("#trendCards");
 
 const BASKET_COUNTER = document.querySelector("#basketCounter");
 
@@ -220,6 +221,8 @@ const productCards = () => {
       .join("");
 
     PRODUCT_CARDS_WRAPPER && (PRODUCT_CARDS_WRAPPER.innerHTML = renderProducts);
+    TREND_PRODUCTS_WRAPPER &&
+      (TREND_PRODUCTS_WRAPPER.innerHTML = renderProducts);
     BASKET_COUNTER && updateBasketCounter();
     document.querySelectorAll(".add-to-cart").forEach((btn) => {
       btn.addEventListener("click", () => {
