@@ -9,6 +9,8 @@ import scrollToTop from "./Common/toTOP";
 import basketList from "./Components/basketList";
 import totalSummary from "./Components/totalSummary";
 import protectRouter from "./Routes/protectRoutes";
+import checkoutPage from "./Components/checkout";
+import ordersList from "./Admin/createOrders";
 const USER = document.querySelector("#user");
 const userName = localStorage.getItem("username");
 
@@ -23,6 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
   basketList();
   totalSummary();
   protectRouter();
+  checkoutPage();
+  ordersList();
   if (userName) {
     USER && (USER.textContent = userName.charAt(0).toUpperCase());
   }

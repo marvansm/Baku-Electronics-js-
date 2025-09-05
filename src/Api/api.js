@@ -25,6 +25,15 @@ class HttpService {
       console.log(error);
     }
   }
+
+  async DeleteData(url) {
+    try {
+      const res = await this.axiosInstance.delete(url);
+      return res.data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
 
 export default HttpService;

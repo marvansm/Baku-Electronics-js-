@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "id": "122b5071-e42e-4d3e-9278-4e337a042ccf",
-      "name": "Smartfon HONOR X9C 12GB/256GB JADE CYAN",
-      "price": "899.99",
-      "discountPrice": "799.99",
-      "category": "elektronika",
-      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2FinventImages%2FHONOR_X9C_JADE_CYAN_1.webp&w=3840&q=75"
-    },
-    {
       "id": "cc427c09-26aa-46f4-8f6d-7e3708187753",
       "name": "Smartfon Apple iPhone 16 128GB BLACK",
       "price": "2249.99",
@@ -79,6 +71,56 @@
       "discountPrice": "769.99",
       "category": "elektronika",
       "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fsmartfon-samsung-galaxy-a55-8gb128gb-light-violet-a556_1.webp&w=3840&q=75"
+    }
+  ],
+  "orders": [
+    {
+      "id": "33c1",
+      "name": "Mervan",
+      "surname": "Memmedli",
+      "email": "hello@gmail.com",
+      "phone": "0558001231",
+      "orderStatus": "Gözləmədə",
+      "totalPrice": "3979.96",
+      "orderItem": [
+        {
+          "id": "122b5071-e42e-4d3e-9278-4e337a042ccf",
+          "name": "Smartfon HONOR X9C 12GB/256GB JADE CYAN",
+          "price": "899.99",
+          "discountPrice": "799.99",
+          "category": "elektronika",
+          "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2FinventImages%2FHONOR_X9C_JADE_CYAN_1.webp&w=3840&q=75",
+          "quantity": 1
+        },
+        {
+          "id": "cc427c09-26aa-46f4-8f6d-7e3708187753",
+          "name": "Smartfon Apple iPhone 16 128GB BLACK",
+          "price": "2249.99",
+          "discountPrice": "2039.99",
+          "category": "elektronika",
+          "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fapple-iphone-16-128gb-black-4.jpg&w=3840&q=75",
+          "quantity": 1
+        },
+        {
+          "id": "8e49cdc4-cdf1-4070-8fcc-93a9d05d07aa",
+          "name": "Smartfon Samsung Galaxy A55 8GB/128GB LIGHT VIOLET (A556)",
+          "price": "649.99",
+          "discountPrice": "769.99",
+          "category": "elektronika",
+          "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fsmartfon-samsung-galaxy-a55-8gb128gb-light-violet-a556_1.webp&w=3840&q=75",
+          "quantity": 1
+        },
+        {
+          "id": "f553cd0c-ca62-4daf-893d-6697e6acc8c6",
+          "name": "Konteynerli tozsoran SAMSUNG SC45 VCC4520S36/XEV",
+          "price": "179.99",
+          "discountPrice": "209.99",
+          "category": "elektronika",
+          "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fproducts%2F22029%2F10.jpg&w=3840&q=75",
+          "quantity": 1
+        }
+      ],
+      "date": "2025-09-06"
     }
   ]
 }
