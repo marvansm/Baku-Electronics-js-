@@ -15,7 +15,7 @@ const totalSummary = () => {
   const itemsHTML = cart
     .map(
       (item) => `
-    <div class="flex justify-between items-center text-sm mb-2">
+    <div class="flex justify-between items-center text-sm mb-2 ">
       <span class="text-gray-600">${item.name}</span>
       <span class="font-medium">${
         (item.discountPrice || item.price) * item.quantity
@@ -31,7 +31,7 @@ const totalSummary = () => {
   TOTAL_WRAPPER.innerHTML = `
     <div class="bg-white border border-gray-100 sticky top-6 shadow-md rounded-2xl p-6">
       <h2 class="text-xl font-semibold text-gray-900 mb-4">Ümumi baxış</h2>
-      <div class="space-y-2 mb-4">${itemsHTML}</div>
+      <div class="space-y-2 mb-4 h-[500px] overflow-y-scroll">${itemsHTML}</div>
       <div class="border-t border-gray-100 pt-4">
         <div class="flex justify-between items-center mb-2">
           <span class="text-gray-900 font-medium">Cəmi məbləğ:</span>

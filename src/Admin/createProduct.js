@@ -14,6 +14,7 @@ const PRODUCT_IMAGE_INPUT =
 const PRODUCT_LIST_BODY = document.querySelector("#products-table-body");
 const api = new HttpService("http://localhost:3000/");
 const adminProductsPage = () => {
+
   ADMIN_FORM &&
     ADMIN_FORM.addEventListener("submit", (e) => {
       e.preventDefault();

@@ -225,7 +225,15 @@ const productCards = () => {
       btn.addEventListener("click", () => {
         btn.style.backgroundColor = "#EA2427";
         btn.style.color = "#fff";
-        btn.innerHTML = ` <a href="./basket.html">
+        setTimeout(() => {
+          btn.innerHTML = ` <a href="./basket.html">
+  <span class="flex items-center  gap-3 text-[14px]">
+<i class="ri-loader-4-line inline-block animate-spin"></i>
+  Səbətə əlavə et
+  </span>
+</a> `;
+          setTimeout(() => {
+            btn.innerHTML = ` <a href="./basket.html" class="h-full w-full flex items-center justify-center">
   <span class="flex items-center  gap-3 text-[14px]">
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -252,9 +260,11 @@ const productCards = () => {
         clip-rule="evenodd"
       ></path>
     </svg>
-    Səbətə keç
+    Səbətə keç 
   </span>
 </a> `;
+          }, 1000);
+        }, 0);
       });
     });
     document.querySelectorAll(".wishList").forEach((btn) => {

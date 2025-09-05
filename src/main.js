@@ -8,6 +8,7 @@ import productCards from "./Components/productCards";
 import scrollToTop from "./Common/toTOP";
 import basketList from "./Components/basketList";
 import totalSummary from "./Components/totalSummary";
+import protectRouter from "./Routes/protectRoutes";
 
 document.addEventListener("DOMContentLoaded", () => {
   postUserData();
@@ -19,5 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
   scrollToTop();
   basketList();
   totalSummary();
+  protectRouter();
   swiperVariants("mySwiper", 1.2, 30, 3000);
 });
