@@ -1,4 +1,5 @@
 import HttpService from "../Api/api";
+
 const postUserData = () => {
   const api = new HttpService("https://dummyjson.com/auth");
   const LOGIN_FORM = document.querySelector("#login-form");
@@ -30,6 +31,8 @@ const postUserData = () => {
         }
 
         localStorage.setItem("token", data.accessToken);
+        localStorage.setItem("username", loginPayload.username);
+
         setTimeout(() => {
           window.location.href = "/";
         }, 1000);

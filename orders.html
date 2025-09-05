@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div class="flex h-screen">
+      <div class="w-64 bg-indigo-800 text-white">
+        <div class="p-6">
+          <h1 class="text-2xl font-bold">Menu</h1>
+        </div>
+        <nav class="mt-6">
+          <a
+            href="./admin.html"
+            id="products-link"
+            class="flex items-center px-6 py-3 hover:bg-indigo-700 hover:text-white transition-colors duration-200 text-white"
+          >
+            <svg
+              class="w-5 h-5 mr-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+              ></path>
+            </svg>
+            Məhsullar
+          </a>
+          <a
+            href="./orders.html"
+            id="orders-link"
+            class="flex items-center px-6 py-3 text-gray-300 hover:bg-indigo-700 hover:text-white transition-colors duration-200"
+          >
+            <svg
+              class="w-5 h-5 mr-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+              ></path>
+            </svg>
+            Sifarişlər
+          </a>
+        </nav>
+      </div>
+
+      <div class="flex-1 flex flex-col overflow-hidden">
+        <header class="bg-white shadow-sm border-b border-gray-200">
+          <div class="mx-auto py-4 px-6">
+            <a href="./index.html">
+              <img
+                src="https://new.bakuelectronics.az/img/auth-logo.png"
+                alt="Logo"
+                class="w-[205px] h-[70px] object-cover"
+            /></a>
+          </div>
+        </header>
+        <div id="orders-page" class="flex-1 overflow-auto p-6">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Sifarişlər</h3>
+            <div class="overflow-x-auto">
+              <table class="w-full table-auto">
+                <thead>
+                  <tr class="bg-gray-50">
+                    <th
+                      class="px-4 py-3 text-left text-sm font-medium text-gray-700"
+                    >
+                      Sifariş ID
+                    </th>
+                    <th
+                      class="px-4 py-3 text-left text-sm font-medium text-gray-700"
+                    >
+                      Müştəri
+                    </th>
+                    <th
+                      class="px-4 py-3 text-left text-sm font-medium text-gray-700"
+                    >
+                      Məhsul
+                    </th>
+                    <th
+                      class="px-4 py-3 text-left text-sm font-medium text-gray-700"
+                    >
+                      Məbləğ
+                    </th>
+                    <th
+                      class="px-4 py-3 text-left text-sm font-medium text-gray-700"
+                    >
+                      Status
+                    </th>
+                    <th
+                      class="px-4 py-3 text-left text-sm font-medium text-gray-700"
+                    >
+                      Tarix
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="orders-table-body" class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="px-4 py-3 text-sm text-gray-900">#001</td>
+                    <td class="px-4 py-3 text-sm text-gray-900">
+                      Əli Məmmədov
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-900">iPhone 15</td>
+                    <td class="px-4 py-3 text-sm text-gray-900">1,299.00 ₼</td>
+                    <td class="px-4 py-3">
+                      <span
+                        class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800"
+                      >
+                        Gözləyir
+                      </span>
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-900">01.09.2025</td>
+                  </tr>
+                  <tr>
+                    <td class="px-4 py-3 text-sm text-gray-900">#002</td>
+                    <td class="px-4 py-3 text-sm text-gray-900">
+                      Ayşən İbrahimova
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-900">MacBook Pro</td>
+                    <td class="px-4 py-3 text-sm text-gray-900">2,499.00 ₼</td>
+                    <td class="px-4 py-3">
+                      <span
+                        class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800"
+                      >
+                        Tamamlandı
+                      </span>
+                    </td>
+                    <td class="px-4 py-3 text-sm text-gray-900">31.08.2025</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
