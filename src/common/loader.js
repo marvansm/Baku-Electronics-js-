@@ -3,7 +3,7 @@ const loading = () => {
   setTimeout(() => {
     LOADER && LOADER.classList.add("hidden");
     LOADER && LOADER.classList.remove("flex");
-  }, 2000);
+  }, 800);
 };
 
 export default loading;

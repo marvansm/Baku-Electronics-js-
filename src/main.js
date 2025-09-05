@@ -21,5 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   basketList();
   totalSummary();
   protectRouter();
+
   swiperVariants("mySwiper", 1.2, 30, 3000);
 });

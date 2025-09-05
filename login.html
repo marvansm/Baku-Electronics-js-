@@ -19,6 +19,18 @@
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body class="bg-gray-100">
+    <div
+      id="Loading"
+      class="fixed w-full h-full inset-0 bg-white flex items-center justify-center z-[9999]"
+    >
+      <div class="absolute">
+        <img
+          src="https://loading.io/assets/mod/spinner/spinner/lg.gif"
+          alt=""
+          class="w-[120px] h-[120px] object-cover"
+        />
+      </div>
+    </div>
     <main>
       <section class="h-screen overflow-y-hidden">
         <div class="grid grid-cols-2 w-full h-full">
@@ -141,10 +153,7 @@
           </div>
         </div>
       </section>
-      
-
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="/src/main.js"></script>
