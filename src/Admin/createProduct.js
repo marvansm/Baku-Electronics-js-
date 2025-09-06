@@ -17,6 +17,8 @@ const adminProductsPage = () => {
   ADMIN_FORM &&
     ADMIN_FORM.addEventListener("submit", (e) => {
       e.preventDefault();
+
+
       const payload = {
         id: crypto.randomUUID(),
         name: PRODUCT_NAME_INPUT.value,
@@ -57,7 +59,7 @@ const adminProductsPage = () => {
         .join("");
     PRODUCT_LIST_BODY && (PRODUCT_LIST_BODY.innerHTML = renderAdminList);
 
-    PRODUCT_LIST_BODY.addEventListener("click", async (e) => {
+    PRODUCT_LIST_BODY && PRODUCT_LIST_BODY.addEventListener("click", async (e) => {
       const deleteBtn = e.target.closest(".delete-btn");
       if (deleteBtn) {
         const row = deleteBtn.closest("tr");
