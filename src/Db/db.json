@@ -71,14 +71,6 @@
       "discountPrice": "769.99",
       "category": "elektronika",
       "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fsmartfon-samsung-galaxy-a55-8gb128gb-light-violet-a556_1.webp&w=3840&q=75"
-    },
-    {
-      "id": "bd8e2e91-632a-4ca9-9854-9d2df29e35ae",
-      "name": "SONY PlayStation 5 Slim BLUE-RAY (PS5 slim)",
-      "price": "1299.99",
-      "discountPrice": "1199.99",
-      "category": "elektronika",
-      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2FinventImages%2F671773-ab51cb9787dbc3df0e8124799231b9dd.webp&w=3840&q=75"
     }
   ],
   "orders": [
@@ -156,6 +148,54 @@
           "category": "Ev əşyaları",
           "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2FKondisioner_YOSHIRO_YAC-S09OT0W-KIT_WOINS_9000_BTU_20-30_m2___1.webp&w=3840&q=75",
           "quantity": 2
+        },
+        {
+          "id": "1406a786-552a-4488-9502-71b47fc8563c",
+          "name": "Velosiped VISTA 29-ZF660-40",
+          "price": "419.99",
+          "discountPrice": "369.99",
+          "category": "idman",
+          "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fproducts%2F95324%2Fcn29-zf660-40.jpg&w=3840&q=75",
+          "quantity": 1
+        }
+      ],
+      "date": "2025-09-07"
+    },
+    {
+      "id": "4bcc",
+      "name": "Nurlan",
+      "surname": "Memmedov",
+      "email": "mervanm009@gmail.com",
+      "phone": "12313123",
+      "orderStatus": "Gözləmədə",
+      "totalPrice": "3329.96",
+      "orderItem": [
+        {
+          "id": "cc427c09-26aa-46f4-8f6d-7e3708187753",
+          "name": "Smartfon Apple iPhone 16 128GB BLACK",
+          "price": "2249.99",
+          "discountPrice": "2039.99",
+          "category": "elektronika",
+          "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fapple-iphone-16-128gb-black-4.jpg&w=3840&q=75",
+          "quantity": 1
+        },
+        {
+          "id": "23d9415d-7587-441f-831a-3f157ff0f61a",
+          "name": "Tava NMP GU1626 26 sm",
+          "price": "59.99",
+          "discountPrice": "22.99",
+          "category": "ev əşyaları",
+          "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Ftava-nmp-gu1626-26-sm_1.webp&w=3840&q=75",
+          "quantity": 1
+        },
+        {
+          "id": "c9e00fea-9127-4807-86d0-964d741fdba1",
+          "name": "Kondisioner YOSHIRO YAC-S09OT0W-KIT W/O/INS ,9000 BTU, 20-30 m2 ",
+          "price": "599.99",
+          "discountPrice": "399.99",
+          "category": "Ev əşyaları",
+          "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2FKondisioner_YOSHIRO_YAC-S09OT0W-KIT_WOINS_9000_BTU_20-30_m2___1.webp&w=3840&q=75",
+          "quantity": 1
         },
         {
           "id": "1406a786-552a-4488-9502-71b47fc8563c",
