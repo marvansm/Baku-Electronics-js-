@@ -41,7 +41,7 @@ const ordersList = () => {
       })
       .join("");
 
-    ORDER_LIST_WRAPPER.innerHTML = orderHTML;
+    ORDER_LIST_WRAPPER && (ORDER_LIST_WRAPPER.innerHTML = orderHTML);
   });
 };
 

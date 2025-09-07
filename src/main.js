@@ -30,6 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
   if (userName) {
     USER && (USER.textContent = userName.charAt(0).toUpperCase());
   }
+  USER &&
+    USER.addEventListener("click", () => {
+      localStorage.removeItem("username");
+      localStorage.removeItem("token");
+      localStorage.removeItem("userId");
+      location.reload();
+    });
 
   swiperVariants("mySwiper", 1.2, 30, 3000);
 });
