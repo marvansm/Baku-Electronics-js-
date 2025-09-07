@@ -17,16 +17,14 @@ const ordersList = () => {
           .join("");
 
         return ` <tr>
-                    <td class="px-4 py-3 text-sm text-gray-900">#${
-                      item?.id
-                    }</td>
+                    <td class="px-4 py-3 text-sm text-gray-900">#${item?.id
+          }</td>
                     <td class="px-4 py-3 text-sm text-gray-900">
                       ${item?.name} ${item?.surname}
                     </td>
                     <td class="px-4 py-3 text-sm text-gray-900">${itemsHTML}</td>
-                    <td class="px-4 py-3 text-sm text-gray-900">${
-                      item?.totalPrice
-                    } ₼</td>
+                    <td class="px-4 py-3 text-sm text-gray-900">${item?.totalPrice
+          } ₼</td>
                     <td class="px-4 py-3">
                       <span
                         class="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-800"
@@ -34,9 +32,8 @@ const ordersList = () => {
                         ${item?.orderStatus}
                       </span>
                     </td>
-                    <td class="px-4 py-3 text-sm text-gray-900">${
-                      item?.date.split("T")[0]
-                    }</td>
+                    <td class="px-4 py-3 text-sm text-gray-900">${item?.date.split("T")[0]
+          }</td>
                   </tr>`;
       })
       .join("");

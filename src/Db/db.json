@@ -71,6 +71,14 @@
       "discountPrice": "769.99",
       "category": "elektronika",
       "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2Fsmartfon-samsung-galaxy-a55-8gb128gb-light-violet-a556_1.webp&w=3840&q=75"
+    },
+    {
+      "id": "bd8e2e91-632a-4ca9-9854-9d2df29e35ae",
+      "name": "SONY PlayStation 5 Slim BLUE-RAY (PS5 slim)",
+      "price": "1299.99",
+      "discountPrice": "1199.99",
+      "category": "elektronika",
+      "image": "https://new.bakuelectronics.az/_next/image?url=https%3A%2F%2Fimg.b-e.az%2Fmedia%2FinventImages%2FinventImages%2F671773-ab51cb9787dbc3df0e8124799231b9dd.webp&w=3840&q=75"
     }
   ],
   "orders": [

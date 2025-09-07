@@ -17,6 +17,8 @@ const adminProductsPage = () => {
   ADMIN_FORM &&
     ADMIN_FORM.addEventListener("submit", (e) => {
       e.preventDefault();
+
+
       const payload = {
         id: crypto.randomUUID(),
         name: PRODUCT_NAME_INPUT.value,
