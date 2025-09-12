@@ -1,27 +1,37 @@
-import HttpService from "../Api/api";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../lib/firebase.js";
+import Swal from "sweetalert2";
 
 const postUserData = () => {
-  const api = new HttpService("https://dummyjson.com/auth");
   const LOGIN_FORM = document.querySelector("#login-form");
-  const USERNAME_INPUT = document.querySelector("#username");
+  const EMAIL_INPUT = document.querySelector("#email-input");
   const PASSWORD_INPUT = document.querySelector("#password");
 
   LOGIN_FORM &&
     LOGIN_FORM.addEventListener("submit", (e) => {
       e.preventDefault();
-
       const loginPayload = {
-        username: USERNAME_INPUT.value,
+        email: EMAIL_INPUT.value,
         password: PASSWORD_INPUT.value,
       };
-      api.PostNewData("/login", loginPayload).then((data) => {
-        console.log(data);
-        if (data) {
+      signInWithEmailAndPassword(
+        auth,
+        loginPayload.email,
+        loginPayload.password
+      ).then((res) => {
+        console.log(res);
+        localStorage.setItem("token", res?.user?.accessToken);
+        localStorage.setItem("userEmail", res?.user?.email);
+
+        if (res) {
           Swal.fire({
-            title: "Done!",
+            title: "Logged in!",
             icon: "success",
             draggable: true,
           });
+          setTimeout(() => {
+            window.location.href = "/";
+          }, 1000);
         } else {
           Swal.fire({
             title: "Ooops!",
@@ -29,15 +39,7 @@ const postUserData = () => {
             draggable: true,
           });
         }
-
-        localStorage.setItem("token", data.accessToken);
-        localStorage.setItem("username", loginPayload.username);
-
-        setTimeout(() => {
-          window.location.href = "/";
-        }, 1000);
       });
-      console.log(loginPayload);
     });
 };
 

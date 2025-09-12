@@ -11,11 +11,14 @@ import totalSummary from "./Components/totalSummary";
 import protectRouter from "./Routes/protectRoutes";
 import checkoutPage from "./Components/checkout";
 import ordersList from "./Admin/createOrders";
+import register from "./Auth/register";
+
 const USER = document.querySelector("#user");
-const userName = localStorage.getItem("username");
+const userEmail = localStorage.getItem("userEmail");
 
 document.addEventListener("DOMContentLoaded", () => {
   postUserData();
+  register();
   bannerFactory();
   NavbarData();
   loading();
@@ -27,14 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
   protectRouter();
   checkoutPage();
   ordersList();
-  if (userName) {
-    USER && (USER.textContent = userName.charAt(0).toUpperCase());
+  if (userEmail) {
+    USER && (USER.textContent = userEmail.charAt(0).toUpperCase());
   }
   USER &&
     USER.addEventListener("click", () => {
-      localStorage.removeItem("username");
+      localStorage.removeItem("userEmail");
       localStorage.removeItem("token");
-      localStorage.removeItem("userId");
       location.reload();
     });
 
